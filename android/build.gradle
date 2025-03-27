@@ -2,12 +2,13 @@ apply plugin: 'com.android.library'
 
 android {
   namespace "com.applanga.android.react"
+  compileSdkVersion 29
+  buildToolsVersion "29.0.3"
   publishNonDefault true
 
   defaultConfig {
-    compileSdk rootProject.ext.compileSdkVersion
     minSdkVersion 16
-    targetSdkVersion rootProject.ext.targetSdkVersion
+    targetSdkVersion 29
   }
 
   lintOptions {
@@ -22,10 +23,10 @@ android {
 
 repositories {
     maven { url 'https://maven.applanga.com/'}
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
   implementation "com.facebook.react:react-android:+"
-  //noinspection ApplangaPlugin
-  implementation "com.applanga.android:Applanga:4.0.214"
+  implementation "com.applanga.android:Applanga:3.0.153"
 }

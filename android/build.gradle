@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 
 android {
+  namespace "com.applanga.android.react"
   publishNonDefault true
 
   defaultConfig {
@@ -24,7 +25,7 @@ repositories {
 }
 
 dependencies {
-  implementation "com.facebook.react:react-native:+"
+  implementation "com.facebook.react:react-android:+"
   //noinspection ApplangaPlugin
   implementation "com.applanga.android:Applanga:4.0.214"
 }

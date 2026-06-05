@@ -28,5 +28,5 @@ repositories {
 
 dependencies {
   implementation "com.facebook.react:react-android:+"
-  implementation "com.applanga.android:Applanga:4.0.214"
+  implementation "com.applanga.android:Applanga:3.0.153"
 }

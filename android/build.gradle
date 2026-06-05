@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 
 android {
+  namespace "com.applanga.android.react"
   compileSdkVersion 29
   buildToolsVersion "29.0.3"
   publishNonDefault true
@@ -26,6 +27,6 @@ repositories {
 }
 
 dependencies {
-  implementation "com.facebook.react:react-native:+"
-  implementation "com.applanga.android:Applanga:3.0.153"
+  implementation "com.facebook.react:react-android:+"
+  implementation "com.applanga.android:Applanga:4.0.214"
 }
